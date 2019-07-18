@@ -18,14 +18,16 @@ class Model {
     return newRecord.save();
   }
 
-  update(_id, record) {
-    return this.schema.findByIdAndUpdate(_id, record, {new: true});
+  update(id, record) {
+    return this.schema.findOneAndUpdate({_id: id}, record, {new: true});
 
   }
 
-  delete(_id) {
-    return this.schema.findOneAndDelete(_id);
+  delete(id) {
+    return this.schema.findOneAndDelete({_id: id});
   }
+
+  
 }
 
 module.exports = Model;
