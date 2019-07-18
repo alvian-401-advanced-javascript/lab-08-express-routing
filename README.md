@@ -5,11 +5,11 @@
 ### Author: Alvian Joseph
 
 ### Links and Resources
-* [submission PR]()
-* [![Build Status]()
+* [submission PR](https://github.com/alvian-401-advanced-javascript/lab-08-express-routing)
+* [![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-08-express-routing.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-08-express-routing)
 
-### Command to add data to server  
-```echo '{"name": "AJ", "description":"software dev"}' | http post :3000/api/v1/categories```
+#### Description
+Given a partially working API server, complete the server’s functionality by creating the data models and writing a full test suite
 
 #### Modules
 1) Models
@@ -25,6 +25,9 @@
 4) Error handlers
     * 404.js
     * error.js     
+
+#### to add data to server  
+```echo '{"name": "AJ", "description":"software dev"}' | http post :3000/api/v1/categories```
 
 #### REST methods used
 * GET
